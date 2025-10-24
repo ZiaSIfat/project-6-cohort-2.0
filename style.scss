@@ -21,8 +21,34 @@ main{
 
     header{
         width: 100%;
-        background-color: aquamarine;
         grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        font-weight: bold;
+
+        .links{
+            display: flex;
+            gap: 2.5rem;
+        }
+        .btn-div{
+            display: flex;
+            gap: 1rem;
+
+            button{
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+        }
+
+        .request{
+            background-color: rgb(121, 177, 241);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+        }
+    }
     }
 
     section.tl-sec{
