@@ -11,19 +11,18 @@ html, body {
 
 main {
   width: 100%;
-  height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20% 45% 35%;
+  gap: 2rem;
+  padding: 0 2rem;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 10% 55% 35%;
   grid-template-areas: "header header" "tl-sec tr-sec" "bl-sec br-sec";
 }
 main header {
-  width: 100%;
   grid-area: header;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
   font-weight: bold;
 }
 main header .links {
@@ -47,9 +46,7 @@ main header .btn-div .request {
 }
 main section.tl-sec {
   width: 100%;
-  padding: 0 2.5rem;
   display: flex;
-  align-items: center;
 }
 main section.tl-sec .top-left {
   width: 75%;
@@ -91,15 +88,21 @@ main section.tl-sec .top-left .top-bottom a {
   font-size: 1rem;
 }
 main section.tr-sec {
-  width: 100%;
-  background-color: blueviolet;
   grid-area: tr-sec;
+  background-image: url(./images/purple.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+main section.tr-sec .tr-div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 main section.bl-sec {
-  width: 75%;
-  margin-top: 4.5rem;
-  padding: 1rem 2rem;
-  font-size: 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
 }
 main section.bl-sec p {
   padding-bottom: 1rem;
@@ -108,7 +111,7 @@ main section.bl-sec .logo-div {
   display: inline-flex;
   align-items: center;
   padding-bottom: 1rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 main section.bl-sec .logo-div .small-img {
   height: 2.5rem;
