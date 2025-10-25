@@ -13,6 +13,7 @@ main {
   width: 100%;
   height: 100%;
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 20% 45% 35%;
   grid-template-areas: "header header" "tl-sec tr-sec" "bl-sec br-sec";
@@ -48,7 +49,30 @@ main header .btn-div .request {
 main section.tl-sec {
   width: 100%;
   background-color: bisque;
-  grid-area: tl-sec;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+main section.tl-sec .top-left {
+  width: 75%;
+}
+main section.tl-sec .top-left h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+main section.tl-sec .top-left h1 img {
+  height: 2rem;
+  display: inline-block;
+}
+main section.tl-sec .top-left h1 button {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  height: 2rem;
 }
 main section.tr-sec {
   width: 100%;
