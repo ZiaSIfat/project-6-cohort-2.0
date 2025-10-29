@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 html, body {
@@ -24,6 +25,9 @@ main header {
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
+}
+main header h5 {
+  font-size: 1.5rem;
 }
 main header .links {
   display: flex;
@@ -122,7 +126,7 @@ main section.tr-sec .tr-div .tr-bottom button {
 }
 main section.bl-sec {
   grid-area: bl-sec;
-  margin-top: 4rem;
+  padding-top: 5rem;
   font-size: 0.9rem;
 }
 main section.bl-sec p {
@@ -163,15 +167,18 @@ main section.br-sec .top .top-div {
   justify-content: space-between;
 }
 main section.br-sec .top .top-div .arrow {
-  padding: 0.8rem;
-  border-radius: 50%;
-  border: none;
-  font-weight: bold;
-  background-color: white;
+  padding: 0.5rem 1rem;
 }
 main section.br-sec .top .top-div .location {
   padding: 0.5rem 1rem;
   border-radius: 5rem;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+}
+main section.br-sec .top .top-div .btn2 {
+  padding: 0.5rem;
+  border-radius: 50%;
   border: none;
   font-weight: bold;
   background-color: white;
@@ -194,6 +201,7 @@ main section.br-sec .bottom {
 }
 main section.br-sec .bottom h1 {
   font-weight: 100;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 main section.br-sec .bottom .top-right {
@@ -207,19 +215,19 @@ main section.br-sec .bottom .top-right button {
   background-color: white;
   font-weight: bold;
 }
-main section.br-sec .bottom img {
+main section.br-sec .bottom .top-right img {
   height: 2rem;
   border-radius: 50%;
 }
-main section.br-sec .bottom .img1 {
+main section.br-sec .bottom .top-right .img1 {
   position: absolute;
   right: 6rem;
 }
-main section.br-sec .bottom .img2 {
+main section.br-sec .bottom .top-right .img2 {
   position: absolute;
   right: 4.5rem;
 }
-main section.br-sec .bottom .img3 {
+main section.br-sec .bottom .top-right .img3 {
   position: absolute;
   right: 3rem;
 }/*# sourceMappingURL=style.css.map */
